@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Manin CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <!--Google Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Montserrat&family=Poppins:wght@300;400&display=swap" rel="stylesheet" />
+    <!-- Font Awesome - Icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body>
+    <nav>
+      <header>
+        <h1>Sephotoworks</h1>
+      </header>
+      <ul>
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#about">About me</a></li>
+      </ul>
+      <div class="menu-toggle">
+        <input type="checkbox" />
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+    <script>
+      const menuToggle = document.querySelector(".menu-toggle input");
+      const nav = document.querySelector("nav ul");
+      menuToggle.addEventListener("click", function () {
+        nav.classList.toggle("slide");
+      });
+    </script>
+
+    <main>
+      <section id="hero">
+        <h2>Welcome to our Photography Website</h2>
+        <a href="#gallery" class="button">View Gallery</a>
+      </section>
+
+      <section id="gallery">
+        <h2>Our Gallery</h2>
+        <div class="gallery-container">
+          <div class="gallery-item">
+            <img src="https://source.unsplash.com/featured/?nature,landscape" alt="Landscape" />
+            <h3>Landscape</h3>
+          </div>
+          <div class="gallery-item">
+            <img src="https://source.unsplash.com/featured/?cityscape,architecture" alt="Cityscape" />
+            <h3>Cityscape</h3>
+          </div>
+          <div class="gallery-item">
+            <img src="https://source.unsplash.com/featured/?wildlife,animals" alt="Wildlife" />
+            <h3>Wildlife</h3>
+          </div>
+          <div class="gallery-item">
+            <img src="https://source.unsplash.com/featured/?food" alt="Food" />
+            <h3>Food</h3>
+          </div>
+          <div class="gallery-item">
+            <img src="https://source.unsplash.com/featured/?travel" alt="Travel" />
+            <h3>Travel</h3>
+          </div>
+          <div class="gallery-item">
+            <img src="https://source.unsplash.com/featured/?portrait" alt="Portrait" />
+            <h3>Portrait</h3>
+          </div>
+        </div>
+      </section>
+
+      <aside class="icon">
+        <div class="media-sosial">
+          <ul>
+            <li>
+              <a href="https://instagram.com/sepyan_gnwn?igshid=ZDdkNTZiNTM="><i class="fab fa-instagram"></i></a>
+            </li>
+            <li>
+              <a href="https://www.facebook.com/sepyan.gunawan?mibextid=ZbWKwL"><i class="fab fa-facebook"></i></a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/sepyangunawan"><i class="fab fa-linkedin-in"></i></a>
+            </li>
+          </ul>
+        </div>
+      </aside>
+      <article class="list-profile" id="about">
+        <section class="profile-wrapper">
+          <aside class="profile">
+            <img src="assets\image\IMG_Profile.jpg" alt="Profile" />
+          </aside>
+          <div class="profile-detail">
+            <h2 class="name">Sepyan Gunawan</h2>
+            <div class="description-profile">
+              <div class="description"> 
+                Hello, my name Sepyan Gunawan born and grew up in Bekasi. 
+                currently studying at Krisnadwipayana University Jakarta majoring in 
+                Informatics Engineering which is now in the 6th semester. 
+                I have been very interested in technological developments since 
+                junior high school, because technology can make it easier for us in 
+                many things, even technology can facilitate us from daily activities. 
+            </div>
+          </div>
+        </section>
+      </article>
+    </main>
+    <footer>2023 &copy; Sepyan Gunawan</footer>
+  </body>
+</html>
